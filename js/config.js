@@ -6,7 +6,7 @@
    ========================================================= */
 const DATOS_TORNEO = {
   jugadoresInscritos: 0,
-  montoRecaudado: 0, // en pesos (MXN)
-  numeroDonantes: 0,
+  montoRecaudado: 1000, // en pesos (MXN)
+  numeroDonantes: 1,
   ultimaActualizacion: "2026-10-15"
 };
