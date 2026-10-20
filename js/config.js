@@ -5,8 +5,8 @@
    - La fecha va en formato AAAA-MM-DD.
    ========================================================= */
 const DATOS_TORNEO = {
-  jugadoresInscritos: 0,
-  montoRecaudado: 1000, // en pesos (MXN)
-  numeroDonantes: 1,
-  ultimaActualizacion: "2026-10-15"
+  jugadoresInscritos: 3,
+  montoRecaudado: 2250, // en pesos (MXN)
+  numeroDonantes: 4,
+  ultimaActualizacion: "2026-10-19"
 };
