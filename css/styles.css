@@ -208,6 +208,7 @@ a { color: var(--gold-deep); }
 .hero__ribbon {
   width: clamp(110px, 30vw, 170px);
   margin-bottom: 8px;
+  mix-blend-mode: multiply;
 }
 
 .hero__rip {
