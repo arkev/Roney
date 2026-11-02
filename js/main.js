@@ -58,6 +58,37 @@
     }
   }
 
+  /* ---------- Campaña de GoFundMe ---------- */
+  const formatoDolares = new Intl.NumberFormat("es-MX", {
+    style: "currency",
+    currency: "USD",
+    currencyDisplay: "narrowSymbol",
+    maximumFractionDigits: 0
+  });
+
+  const gfmRecaudado = Math.max(0, Number(datos.gofundmeRecaudado) || 0);
+  const gfmMeta = Math.max(0, Number(datos.gofundmeMeta) || 0);
+  const gfmPorcentaje = gfmMeta > 0 ? Math.round((gfmRecaudado / gfmMeta) * 100) : 0;
+  const gfmBarra = document.getElementById("gfm-barra");
+
+  const gfmRecaudadoEl = document.getElementById("gfm-recaudado");
+  const gfmMetaEl = document.getElementById("gfm-meta");
+  const gfmPorcentajeEl = document.getElementById("gfm-porcentaje");
+  if (gfmRecaudadoEl) gfmRecaudadoEl.textContent = formatoDolares.format(gfmRecaudado);
+  if (gfmMetaEl) gfmMetaEl.textContent = formatoDolares.format(gfmMeta);
+  if (gfmPorcentajeEl) {
+    gfmPorcentajeEl.textContent = gfmPorcentaje >= 100
+      ? "Meta superada (" + gfmPorcentaje + "%)"
+      : gfmPorcentaje + "% de la meta";
+  }
+
+  function llenarBarra() {
+    if (!gfmBarra) return;
+    const ancho = Math.min(gfmPorcentaje, 100);
+    gfmBarra.setAttribute("aria-valuenow", String(ancho));
+    gfmBarra.querySelector(".gfm__fill").style.width = ancho + "%";
+  }
+
   /* ---------- Animaciones al hacer scroll ---------- */
   if ("IntersectionObserver" in window && !reduceMotion) {
     const revealObserver = new IntersectionObserver(function (entradas) {
@@ -79,8 +110,19 @@
       });
     }, { threshold: 0.5 });
     contadores.forEach(function (el) { counterObserver.observe(el); });
+
+    if (gfmBarra) {
+      const barraObserver = new IntersectionObserver(function (entradas) {
+        if (entradas[0].isIntersecting) {
+          llenarBarra();
+          barraObserver.disconnect();
+        }
+      }, { threshold: 0.5 });
+      barraObserver.observe(gfmBarra);
+    }
   } else {
     document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
+    llenarBarra();
   }
 
   /* ---------- Aviso (toast) ---------- */
@@ -145,9 +187,9 @@
   /* ---------- Compartir ---------- */
   const urlPagina = window.location.href.split("#")[0];
   const mensaje =
-    "Este 16 de noviembre juguemos por algo más grande que el Disc Golf. Juguemos por Roney. " +
-    "Torneo en Beneficio de Roney Hernández en el Ojo de Agua, Montemorelos, N.L. " +
-    "Juega, dona y comparte: ";
+    "Este 16 de noviembre juguemos por algo más grande que el Disc Golf. " +
+    "Torneo en Memoria de Roney Hernández en el Ojo de Agua, Montemorelos, N.L. " +
+    "Lo recaudado será para apoyar a su familia. Juega, dona y comparte: ";
 
   const whatsapp = document.getElementById("share-whatsapp");
   if (whatsapp) {

@@ -3,65 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Torneo en Beneficio de Roney Hernández | 16 de noviembre</title>
-  <meta name="description" content="Torneo de Disc Golf en beneficio de Roney Hernández. Lunes 16 de noviembre de 2026 en el Ojo de Agua, Montemorelos, N.L. Inscripción voluntaria. Juega, dona y comparte.">
-  <meta name="theme-color" content="#F26A1B">
+  <title>Torneo en Memoria de Roney Hernández | 16 de noviembre</title>
+  <meta name="description" content="Torneo de Disc Golf en memoria de Roney Hernández (1998 – 2026). Lunes 16 de noviembre de 2026 en el Ojo de Agua, Montemorelos, N.L. Lo recaudado será para apoyar a su familia. Juega, dona y comparte.">
+  <meta name="theme-color" content="#2B2724">
 
   <!-- Open Graph: vista previa al compartir en WhatsApp y Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
-  <meta property="og:title" content="Torneo en Beneficio de Roney Hernández">
+  <meta property="og:title" content="Torneo en Memoria de Roney Hernández">
   <meta property="og:description" content="Lunes 16 de noviembre, Ojo de Agua, Montemorelos, N.L. Juguemos por algo más grande que el Disc Golf. Juguemos por Roney.">
-  <meta property="og:image" content="assets/img/web/og-portada.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="601">
+  <meta property="og:image" content="https://arkev.github.io/Roney/assets/img/web/og-homenaje.jpg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1446">
   <meta name="twitter:card" content="summary_large_image">
 
   <script>document.documentElement.classList.add("js");</script>
 
-  <link rel="icon" type="image/png" href="assets/img/web/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/img/web/liston-homenaje.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <!-- Ornamentos reutilizables (esquinas y divisor) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="ornamento-esquina" viewBox="0 0 140 140">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2">
+        <path d="M8 132 V44 Q8 8 44 8 H132"/>
+        <path d="M18 132 V52 Q18 18 52 18 H132" stroke-width="1.2"/>
+        <path d="M30 70 C30 44 44 30 70 30"/>
+        <path d="M70 30 C86 30 92 44 82 52 C74 58 64 50 70 44 C74 40 80 42 79 47"/>
+        <path d="M30 70 C30 86 44 92 52 82 C58 74 50 64 44 70 C40 74 42 80 47 79"/>
+        <path d="M96 18 C104 26 116 26 124 18" stroke-width="1.4"/>
+        <path d="M18 96 C26 104 26 116 18 124" stroke-width="1.4"/>
+      </g>
+      <circle cx="30" cy="30" r="3.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="ornamento-divisor" viewBox="0 0 320 28">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+        <path d="M4 14 H122"/>
+        <path d="M198 14 H316"/>
+        <path d="M128 14 C136 2 148 2 152 10 C155 16 148 20 144 16"/>
+        <path d="M192 14 C184 26 172 26 168 18 C165 12 172 8 176 12"/>
+        <path d="M152 10 C156 18 164 18 168 18" stroke-width="1.6"/>
+      </g>
+      <circle cx="4" cy="14" r="3" fill="currentColor"/>
+      <circle cx="316" cy="14" r="3" fill="currentColor"/>
+    </symbol>
+  </svg>
+
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <!-- ============ HERO ============ -->
   <header class="hero">
+    <svg class="hero__corner hero__corner--tl" aria-hidden="true"><use href="#ornamento-esquina"/></svg>
+    <svg class="hero__corner hero__corner--tr" aria-hidden="true"><use href="#ornamento-esquina"/></svg>
+    <svg class="hero__corner hero__corner--bl" aria-hidden="true"><use href="#ornamento-esquina"/></svg>
+    <svg class="hero__corner hero__corner--br" aria-hidden="true"><use href="#ornamento-esquina"/></svg>
+
     <div class="hero__inner container">
       <div class="hero__content">
-        <img class="hero__logo" src="assets/img/web/rc-birdie.webp" alt="RC Birdie" width="480" height="551">
-        <h1 class="hero__title">
-          <span class="hero__title-main">Torneo en Beneficio</span>
-          <span class="hero__title-sub">de Roney Hernández</span>
-        </h1>
-        <p class="hero__date">Lunes 16 de noviembre</p>
-        <p class="hero__place">
-          <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
-          Ojo de Agua, Montemorelos, N.L.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="https://udisc.com/events/torneo-en-beneficio-de-roney-hernandez-HDzUdJ/about" target="_blank" rel="noopener">
-            <span class="material-symbols-rounded" aria-hidden="true">how_to_reg</span>
-            Inscríbete
-          </a>
-          <a class="btn btn--light" href="#donar">
-            <span class="material-symbols-rounded" aria-hidden="true">volunteer_activism</span>
-            Quiero donar
-          </a>
-        </div>
-        <div class="hero__pdga">
-          <span>Sancionado por la</span>
-          <img src="assets/img/pdga.svg" alt="PDGA" width="120" height="38">
+        <img class="hero__ribbon" src="assets/img/web/liston-homenaje.svg" alt="" width="180" height="142">
+        <p class="hero__rip">Descansa en paz</p>
+        <h1 class="hero__name">Roney Hernández</h1>
+        <svg class="hero__divider" aria-hidden="true"><use href="#ornamento-divisor"/></svg>
+        <p class="hero__years">1998 – 2026</p>
+
+        <div class="hero__event">
+          <p class="hero__event-title">Torneo en Memoria</p>
+          <p class="hero__event-date">Lunes 16 de noviembre · 8:00 am</p>
+          <p class="hero__place">
+            <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+            Ojo de Agua, Montemorelos, N.L.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://udisc.com/events/torneo-en-memoria-de-roney-hernandez-HDzUdJ/about" target="_blank" rel="noopener">
+              <span class="material-symbols-rounded" aria-hidden="true">how_to_reg</span>
+              Inscríbete
+            </a>
+            <a class="btn btn--outline" href="#donar">
+              <span class="material-symbols-rounded" aria-hidden="true">volunteer_activism</span>
+              Quiero donar
+            </a>
+          </div>
+          <div class="hero__pdga">
+            <span>Sancionado por la</span>
+            <img src="assets/img/pdga.svg" alt="PDGA" width="120" height="38">
+          </div>
         </div>
       </div>
-      <img class="hero__roney" src="assets/img/web/roney-ilustracion.webp" alt="Ilustración de Roney Hernández con su carrito de Disc Golf y un disco en la mano" width="760" height="1202">
+      <img class="hero__roney" src="assets/img/web/roney-homenaje.webp" alt="Ilustración de Roney Hernández con su carrito de Disc Golf y un disco en la mano" width="760" height="1202">
     </div>
   </header>
 
@@ -77,20 +113,22 @@
         <div class="story__text reveal">
           <p class="eyebrow">
             <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
-            Su historia
+            En su memoria
           </p>
-          <h2 id="historia-titulo" class="section__title">Roney no está solo</h2>
-          <p>Hoy queremos hablarles de algo muy especial. Algo que va más allá de nuestro deporte y que nos demuestra que, cuando nos unimos, podemos hacer la diferencia.</p>
-          <p>Nuestro amigo <strong>Roney Hernández</strong> está enfrentando una batalla muy difícil: <strong>la leucemia</strong>. Después de haber luchado contra el cáncer y haber logrado salir adelante, hoy necesita nuevamente de nuestro apoyo.</p>
-          <p>Roney se convirtió en un jugador muy activo de Disc Golf. Junto con su amigo César creó <a class="story__link" href="https://www.instagram.com/rc_birdie" target="_blank" rel="noopener"><strong>RC Birdie</strong></a> (la R de Roney y la C de César), una marca con la que comparten contenido de Disc Golf, y organiza <strong>Thursday Glow "RC Birdie"</strong>, una liga que semana a semana reúne a muchos jugadores.</p>
-          <p>Ahora nos toca a nosotros. Desde la comunidad de Disc Golf queremos hacer algo por él.</p>
+          <h2 id="historia-titulo" class="section__title">Gracias por tanto, Roney</h2>
+          <p>Nuestro amigo <strong>Roney Hernández</strong> nos dejó el 30 de octubre, a sus 28 años. Después de vencer el cáncer una vez, enfrentó con valentía una nueva batalla contra la leucemia, siempre acompañado de Paola, su esposa.</p>
+          <p>Roney se convirtió en un jugador muy activo de Disc Golf. Junto con su amigo César creó <a class="story__link" href="https://www.instagram.com/rc_birdie" target="_blank" rel="noopener"><strong>RC Birdie</strong></a> (la R de Roney y la C de César), una marca con la que compartían contenido de Disc Golf, y organizaba <strong>Thursday Glow "RC Birdie"</strong>, una liga que semana a semana reúne a muchos jugadores.</p>
+          <p>Su pasión por este deporte nos unió a muchos. Hoy queremos honrar su memoria y, como comunidad, acompañar a Paola y a su familia.</p>
           <blockquote class="story__quote">
-            Hoy no se trata de quién lanza más lejos, quién hace más birdies o quién se lleva el primer lugar. Hoy se trata de demostrar que somos una comunidad.
+            Hoy no se trata de quién lanza más lejos, quién hace más birdies o quién se lleva el primer lugar. Hoy se trata de honrar a un amigo y demostrar que somos una comunidad.
           </blockquote>
-          <a class="btn btn--outline story__ig" href="https://www.instagram.com/rc_birdie" target="_blank" rel="noopener">
-            <span class="material-symbols-rounded" aria-hidden="true">photo_camera</span>
-            Sigue a RC Birdie en Instagram
-          </a>
+          <div class="story__legacy">
+            <img src="assets/img/web/rc-birdie.webp" alt="RC Birdie" width="72" height="83" loading="lazy">
+            <a class="btn btn--outline" href="https://www.instagram.com/rc_birdie" target="_blank" rel="noopener">
+              <span class="material-symbols-rounded" aria-hidden="true">photo_camera</span>
+              RC Birdie en Instagram
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -104,11 +142,34 @@
             Lo que llevamos juntos
           </p>
           <h2 id="recaudado-titulo" class="section__title">Cada aportación cuenta</h2>
+          <p class="section__lead">Lo recaudado se donará a la campaña de GoFundMe para apoyar a Paola y a la familia de Roney con los gastos funerarios, las cuentas médicas pendientes y las dificultades económicas que deja su partida.</p>
         </div>
+
+        <!-- Campaña de GoFundMe -->
+        <div class="gfm reveal">
+          <div class="gfm__head">
+            <span class="material-symbols-rounded gfm__icon" aria-hidden="true">public</span>
+            <div>
+              <p class="gfm__label">Campaña en GoFundMe</p>
+              <p class="gfm__title">In Loving Memory of Roney – Supporting Paola &amp; Family</p>
+            </div>
+          </div>
+          <p class="gfm__amount">
+            <span class="gfm__raised" id="gfm-recaudado">$0</span>
+            <span class="gfm__of">USD recaudados de <span id="gfm-meta">$0</span> USD</span>
+          </p>
+          <div class="gfm__bar" id="gfm-barra" role="progressbar" aria-label="Avance de la campaña de GoFundMe" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <span class="gfm__fill"></span>
+          </div>
+          <p class="gfm__pct" id="gfm-porcentaje">0% de la meta</p>
+        </div>
+
+        <!-- Aporte de la comunidad -->
+        <h3 class="raised__subtitle reveal">Aporte de la comunidad de Disc Golf</h3>
 
         <div class="raised__main reveal">
           <span class="material-symbols-rounded raised__icon" aria-hidden="true">volunteer_activism</span>
-          <p class="raised__label">Recaudado para Roney</p>
+          <p class="raised__label">Recaudado para su familia</p>
           <p class="raised__amount">
             <span data-counter="montoRecaudado" data-format="moneda">$0</span>
             <span class="raised__currency">MXN</span>
@@ -222,7 +283,7 @@
         <h2 id="inscripcion-titulo" class="section__title">Inscripción voluntaria</h2>
         <p class="signup__lead">El torneo no tiene una cuota fija. Cada jugador aporta <strong>lo que esté dentro de sus posibilidades y de su corazón</strong>.</p>
         <div class="signup__actions">
-          <a class="btn btn--primary" href="https://udisc.com/events/torneo-en-beneficio-de-roney-hernandez-HDzUdJ/about" target="_blank" rel="noopener">
+          <a class="btn btn--primary" href="https://udisc.com/events/torneo-en-memoria-de-roney-hernandez-HDzUdJ/about" target="_blank" rel="noopener">
             <span class="material-symbols-rounded" aria-hidden="true">open_in_new</span>
             Inscríbete en UDisc
           </a>
@@ -243,7 +304,7 @@
             Cómo ayudar
           </p>
           <h2 id="donar-titulo" class="section__title">¿No juegas? También puedes donar</h2>
-          <p class="section__lead">No necesitas participar en el torneo para apoyar a Roney. Nosotros juntamos todo lo recaudado y lo donamos a su campaña de GoFundMe.</p>
+          <p class="section__lead">No necesitas participar en el torneo para apoyar a la familia de Roney. Nosotros juntamos todo lo recaudado y lo donamos a la campaña de GoFundMe para apoyar a Paola y a su familia.</p>
         </div>
 
         <div class="donate__grid">
@@ -270,11 +331,12 @@
           <article class="donate-card reveal">
             <span class="material-symbols-rounded donate-card__icon" aria-hidden="true">public</span>
             <h3 class="donate-card__title">GoFundMe</h3>
-            <p>Si prefieres, también puedes donar directamente en la campaña de Roney.</p>
+            <p>Si prefieres, también puedes donar directamente en la campaña de GoFundMe de Roney.</p>
             <a class="btn btn--outline btn--block" href="https://www.gofundme.com/f/help-roney-hernandez-fight-leukemia-faith-hope-healing" target="_blank" rel="noopener">
               <span class="material-symbols-rounded" aria-hidden="true">open_in_new</span>
-              Ir a GoFundMe
+              Donar en GoFundMe
             </a>
+            <p class="donate-card__hint">Campaña: In Loving Memory of Roney</p>
           </article>
         </div>
       </div>
@@ -306,19 +368,21 @@
     <!-- ============ CIERRE ============ -->
     <section class="closing" aria-label="Mensaje final">
       <div class="container closing__inner reveal">
+        <img class="closing__ribbon" src="assets/img/web/liston-homenaje.svg" alt="" width="120" height="95" loading="lazy">
         <p class="closing__lead">Este 16 de noviembre, juguemos por algo más grande que el Disc Golf.</p>
         <p class="closing__title">Juguemos por Roney</p>
-        <p class="closing__cheer">¡Vamos, Roney! ¡Estamos contigo!</p>
+        <svg class="closing__divider" aria-hidden="true"><use href="#ornamento-divisor"/></svg>
+        <p class="closing__cheer">Gracias por tanto, Roney. Siempre serás parte de nuestra comunidad.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <img src="assets/img/web/rc-birdie.webp" alt="RC Birdie" width="64" height="73" loading="lazy">
-      <p>Torneo en Beneficio de Roney Hernández · Montemorelos, N.L. · 2026</p>
+      <p class="footer__name">Torneo en Memoria de Roney Hernández</p>
+      <p>1998 – 2026 · Montemorelos, N.L.</p>
       <p class="footer__links">
-        <a href="https://udisc.com/events/torneo-en-beneficio-de-roney-hernandez-HDzUdJ/about" target="_blank" rel="noopener">UDisc</a>
+        <a href="https://udisc.com/events/torneo-en-memoria-de-roney-hernandez-HDzUdJ/about" target="_blank" rel="noopener">UDisc</a>
         <a href="https://www.pdga.com/tour/event/108646" target="_blank" rel="noopener">PDGA</a>
         <a href="https://www.gofundme.com/f/help-roney-hernandez-fight-leukemia-faith-hope-healing" target="_blank" rel="noopener">GoFundMe</a>
         <a href="https://www.instagram.com/rc_birdie" target="_blank" rel="noopener">Instagram</a>
