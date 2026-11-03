@@ -6,10 +6,10 @@
    ========================================================= */
 const DATOS_TORNEO = {
   // Aporte de la comunidad de Disc Golf
-  jugadoresInscritos: 3,
-  montoRecaudado: 2250, // en pesos (MXN)
-  numeroDonantes: 4,
-  ultimaActualizacion: "2026-10-19",
+  jugadoresInscritos: 5,
+  montoRecaudado: 2650, // en pesos (MXN)
+  numeroDonantes: 6,
+  ultimaActualizacion: "2026-11-02",
 
   // Campaña de GoFundMe (cópialo de la página de la campaña)
   gofundmeRecaudado: 7267, // en dólares (USD)
