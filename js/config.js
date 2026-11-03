@@ -9,7 +9,7 @@ const DATOS_TORNEO = {
   jugadoresInscritos: 6,
   montoRecaudado: 3650, // en pesos (MXN)
   numeroDonantes: 7,
-  ultimaActualizacion: "2026-11-03",
+  ultimaActualizacion: "2026-11-02",
 
   // Campaña de GoFundMe (cópialo de la página de la campaña)
   gofundmeRecaudado: 7267, // en dólares (USD)
