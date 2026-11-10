@@ -7,8 +7,8 @@
 const DATOS_TORNEO = {
   // Aporte de la comunidad de Disc Golf
   jugadoresInscritos: 7,
-  montoRecaudado: 3650, // en pesos (MXN)
-  numeroDonantes: 7,
+  montoRecaudado: 4650, // en pesos (MXN)
+  numeroDonantes: 8,
   ultimaActualizacion: "2026-11-10",
 
   // Campaña de GoFundMe (cópialo de la página de la campaña)
