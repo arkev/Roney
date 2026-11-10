@@ -6,14 +6,14 @@
    ========================================================= */
 const DATOS_TORNEO = {
   // Aporte de la comunidad de Disc Golf
-  jugadoresInscritos: 6,
+  jugadoresInscritos: 7,
   montoRecaudado: 3650, // en pesos (MXN)
   numeroDonantes: 7,
-  ultimaActualizacion: "2026-11-02",
+  ultimaActualizacion: "2026-11-10",
 
   // Campaña de GoFundMe (cópialo de la página de la campaña)
-  gofundmeRecaudado: 7267, // en dólares (USD)
-  gofundmeMeta: 7500       // en dólares (USD)
+  gofundmeRecaudado: 9193, // en dólares (USD)
+  gofundmeMeta: 11000       // en dólares (USD)
 };
 
 /* = anoté a milton y linda van a donar $200 cada quien pero aun no hacen la transerencia
