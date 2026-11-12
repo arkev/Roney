@@ -17,7 +17,6 @@ const DATOS_TORNEO = {
 };
 
 /* = 
-
 Los que ya dieron:
 
 Kevin:500
@@ -29,7 +28,7 @@ Melquis: 500
 
 Reales: $3,400
 
-Los que aun no lo an dado:
+Los que aun no lo han dado:
 Pinche Árbol: 1000
 Kenneth: 250
 Edson: 100
