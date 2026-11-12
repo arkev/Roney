@@ -7,15 +7,32 @@
 const DATOS_TORNEO = {
   // Aporte de la comunidad de Disc Golf
   jugadoresInscritos: 7,
-  montoRecaudado: 4650, // en pesos (MXN)
-  numeroDonantes: 8,
-  ultimaActualizacion: "2026-11-10",
+  montoRecaudado: 4750, // en pesos (MXN)
+  numeroDonantes: 9,
+  ultimaActualizacion: "2026-11-12",
 
   // Campaña de GoFundMe (cópialo de la página de la campaña)
   gofundmeRecaudado: 9193, // en dólares (USD)
   gofundmeMeta: 11000       // en dólares (USD)
 };
 
-/* = anoté a milton y linda van a donar $200 cada quien pero aun no hacen la transerencia
-también a noté al pinche árbol, pero el no se cuanto va a donar y no ha hecho el donativo en Paypal
+/* = 
+
+Los que ya dieron:
+
+Kevin:500
+Javier Romo:1000
+Jerez:1000
+Milton:200
+Linda: 200
+Melquis: 500
+
+Reales: $3,400
+
+Los que aun no lo an dado:
+Pinche Árbol: 1000
+Kenneth: 250
+Edson: 100
+
+Total incluyendo los que no han dado: $4,750
 = */
